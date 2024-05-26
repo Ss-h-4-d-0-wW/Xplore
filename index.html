@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+    <header>
+        <a href="#" class="logo">Game Xplore</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#tournaments">Tournaments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" id="searchInput" placeholder="Search Games" oninput="search()">
+            </div>
+        </div
+        <div class="toggleMenu " onclick="toggleMenu();" ></div>
+    </header>
+    <div id="searchResults"></div>
+<!-- Home banner -->
+<div class="banner animeX" id="home">
+    <div class="bg">
+        <div class="content">
+            <h2>Explore the <br>Virtual Galaxy</h2>
+            <p>Embark on epic adventures and conquer new realms!</p>
+            <a href="https://somasishmohanty.github.io/Path_finder_99/" target="_blank" class="btn">Play Now</a>
+        </div>
+        <!-- Adjust width and height attributes as needed -->
+    </div>
+</div>
+
+
+    <!-- About -->
+    <div class="about animeX" id="about" >
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>We are a team of passionate specialists with an extensive knowledge of the video game industry. We provide Video game digital distribution service and is developed by Game Xplore.
+                Our task is to make sure that players will be able to enjoy unique and unforgettable gaming experience. Also, we focus on knowledge based game development so that people engage with their curriculum.
+                
+                We’re not just a game company – we’re your game partner!
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="videogame.png">
+    </div>
+
+    <!-- Games -->
+    <div class="games animeX" id="games" >
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="all" >All</li>
+            <li class="list active" data-filter="pc" >Pc games</li>
+            <li class="list active" data-filter="mobile" >Mobile games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="memory.JPG">
+                <div class="content">
+                    <h4>Memory Cards</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Memory_Cards/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="sudoku.png">
+                <div class="content">
+                    <h4>Sudoku</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Suduko_all/" target="_blank">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="2048.png">
+                <div class="content">
+                    <h4>2048</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/2048_classic/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="whack a mole.jpg">
+                <div class="content">
+                    <h4>Whack-a-Mole </h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Wack_a_Mole/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Doraemon.png">
+                <div class="content">
+                    <h4>Doraemon Slide</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Doremon_slide/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Wordle.jpg">
+                <div class="content">
+                    <h4>Wordle 99</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Wordle_99/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="jet.jpeg">
+                <div class="content">
+                    <h4>Spaceship Fighter</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        
+                        <a href="https://somasishmohanty.github.io/Spaceship_fighter/" target="_blank" >Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tournaments -->
+    <div class="tournaments animeX" id="tournaments" >
+        <h2>Live Tournaments</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="game5.jpeg">
+                <div class="content">
+                    <h4><span>50</span> Matches in progress....</h4>
+                    <p>Online multiplayer battle royale game where up to 100 players parachute onto an island, scavenge for weapons and equipment, and engage in a last-person-standing competition.</p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Coming soon..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="tournament2.jpeg">
+                <div class="content">
+                    <h4><span>40</span> Matches in progress....</h4>
+                    <p>Highly successful and long-running series of first-person shooter video games. Developed by various studios and published by Activision, the franchise has been known for its immersive single-player campaigns, intense multiplayer modes, and, more recently, battle royale experiences.</p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Coming soon..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="tornament3.jpeg">
+                <div class="content">
+                    <h4><span>30</span> Matches in progress....</h4>
+                    <p>Unique blend of traditional fighting gameplay and silhouette-style graphics, where characters appear as shadowy figures. Players engage in one-on-one combat using a variety of martial arts techniques and weapons.</p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Coming soon..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Developers -->
+    <div class="tournaments animeX" id="tournaments" >
+        <h2>DEVELOPERS</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="srisha.jpg">
+                <div class="content">
+                    <h4><span>20051225</span> Srisha Prasad Rath</h4>
+                    <p>Developer, UX Designer
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/srisha-prasad-rath-483601187/" target="_blank" class="watch">LinkedIn</a>
+                        <a href="https://github.com/Ss-h-4-d-0-wW" target="_blank" class="join">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="box">
+                <img src="sohan.png">
+                <div class="content">
+                    <h4><span>2005340</span> Sohan Dandapat</h4>
+                    <p>Developer, Product Owner
+                    </p>
+                    <div class="btn">
+                        <a href="http://www.linkedin.com/in/sohan-dandapat" target="_blank" class="watch">LinkedIn</a>
+                        <a href="https://github.com/SohanDandapat" target="_blank" class="join">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="somasish.png">
+                <div class="content">
+                    <h4><span>20051319</span> Somasish Mohanty</h4>
+                    <p>Developer, Product Owner
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/sai-prasad-2259ai/" target="_blank" class="watch">LinkedIn</a>
+                        <a href="https://github.com/saip77" target="_blank" class="join">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contacts -->
+    <div class="contact animeX" id="contact" >
+        <img src="contact.jpeg">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="email" placeholder="Email id">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" placeholder="Submit">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">Game Xplore</a>
+            <p><i class='bx bxs-copyright'></i>Copyright 2023 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky navbar
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY>0);
+        })
+
+        // Responsive NavBar
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        //Search bar
+    function search() {
+    var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    var cards = document.querySelectorAll('.cardBx .card'); // Select all cards
+    var resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = ''; // Clear previous results
+
+    // Loop through each card and check if it contains the search term
+    cards.forEach(function (card) {
+        var gameTitle = card.querySelector('h4').textContent.toLowerCase();
+        // var gameDescription = card.querySelector('p').textContent.toLowerCase();
+
+        if (gameTitle.includes(searchTerm)) {
+            // If the game contains the search term, append the card to the results container
+            resultsContainer.appendChild(card.cloneNode(true));
+        }
+    });
+
+    if (resultsContainer.innerHTML === '') {
+        // If no results found, display a message
+        resultsContainer.innerHTML = '<p>No matching games found.</p>';
+    }
+}
+
+
+        // Scrolling Animation Effects
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeX');
+
+            for(var s = 0; s<anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+        // More Games Button Functionality
+document.querySelector('.more-games-button .btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Toggle visibility of additional game cards
+    let hiddenCards = document.querySelectorAll('.cardBx .card.hide');
+    hiddenCards.forEach(card => card.classList.toggle('hidden'));
+
+    // Change button text based on visibility
+    let buttonText = this.textContent;
+    this.textContent = buttonText === 'More Games' ? 'Less Games' : 'More Games';
+});
+
+           
+        // Filterable Cards
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i = 0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0; j<list.length; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                let dataFilter = this.getAttributes('data-filter'); 
+
+                for(let k=0; k<card.length; k++){
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>
